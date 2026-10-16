@@ -1,0 +1,640 @@
+/* ================================
+   RecipeNest - Main Styles
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fffaf7;
+    color: #3d2925;
+}
+
+
+/* ================================
+   HEADER
+   ================================ */
+
+header {
+    width: 100%;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fffaf7;
+    border-bottom: 1px solid #f3e4df;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 700;
+    color: #b85c5c;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5b4540;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c96b6b;
+}
+
+
+/* ================================
+   HERO SECTION
+   ================================ */
+
+.hero {
+    min-height: 520px;
+    padding: 70px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff1eb;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.small-title {
+    color: #c96b6b;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    line-height: 1.12;
+    color: #4b302b;
+    margin-bottom: 22px;
+}
+
+.description {
+    max-width: 500px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #765d56;
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   SEARCH BOX
+   ================================ */
+
+.search-box {
+    width: 450px;
+    max-width: 100%;
+    display: flex;
+    background: white;
+    border-radius: 50px;
+    padding: 7px;
+    box-shadow: 0 10px 30px rgba(100, 60, 50, 0.08);
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #4b302b;
+    background: transparent;
+}
+
+.search-box input::placeholder {
+    color: #a8948d;
+}
+
+.search-box button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #c96b6b;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #a95050;
+    transform: scale(1.05);
+}
+
+
+/* ================================
+   HERO FOOD
+   ================================ */
+
+.hero-image {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background: #f8d8cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 145px;
+    box-shadow: 0 20px 50px rgba(100, 60, 50, 0.12);
+}
+
+
+/* ================================
+   CATEGORIES
+   ================================ */
+
+.categories {
+    padding: 70px 7%;
+    background: #fffaf7;
+}
+
+.categories h2,
+.popular h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: #4b302b;
+    margin-bottom: 35px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+}
+
+.category-card {
+    background: white;
+    border: 1px solid #f1e3de;
+    border-radius: 20px;
+    padding: 25px 10px;
+    text-align: center;
+    font-size: 35px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.category-card h3 {
+    font-size: 14px;
+    margin-top: 12px;
+    color: #5b4540;
+}
+
+.category-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(100, 60, 50, 0.10);
+}
+
+
+/* ================================
+   POPULAR RECIPES
+   ================================ */
+
+.popular {
+    padding: 70px 7%;
+    background: #fff1eb;
+}
+
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(100, 60, 50, 0.07);
+    transition: 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(100, 60, 50, 0.12);
+}
+
+.food-image {
+    height: 220px;
+    background: #f8d8cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.recipe-info {
+    padding: 22px;
+}
+
+.recipe-info span {
+    color: #c96b6b;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.recipe-info h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin: 8px 0 12px;
+    color: #4b302b;
+}
+
+.recipe-info p {
+    color: #88716a;
+    font-size: 14px;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #4b302b;
+    color: #fceee8;
+    font-size: 14px;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .category-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .recipe-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .hero {
+        padding: 50px 5%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-image {
+        width: 240px;
+        height: 240px;
+        font-size: 100px;
+    }
+
+    .category-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categories,
+    .popular {
+        padding: 50px 5%;
+    }
+}
+
+/* Popular Recipes */
+
+.recipes {
+    padding: 60px 8%;
+}
+
+.recipes h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.recipe-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.recipe-card:hover {
+    transform: translateY(-8px);
+}
+
+.recipe-image {
+    background: #fff0f0;
+    border-radius: 16px;
+    padding: 30px;
+    font-size: 55px;
+    margin-bottom: 18px;
+}
+
+.recipe-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.recipe-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.recipe-card button {
+    background: #d94f5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.recipe-card button:hover {
+    background: #b93645;
+}
+
+
+/* Favorite Button */
+
+.favorite-btn {
+    margin-left: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    background: #f8d8cc;
+    color: #8f4f4f;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.favorite-btn:hover {
+    background: #e9b8aa;
+    transform: translateY(-2px);
+}
+
+/* Favorites Section */
+
+.favorites-section {
+    padding: 60px 8%;
+    background: #fff1eb;
+    text-align: center;
+}
+
+.favorites-section h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    color: #4b302b;
+    margin-bottom: 30px;
+}
+
+#favoriteRecipes {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 8px 25px rgba(100, 60, 50, 0.08);
+}
+
+.no-favorites {
+    color: #88716a;
+    font-size: 16px;
+}
+
+
+
+/* Favorite Recipe Item */
+
+#favoriteRecipes p:not(.no-favorites) {
+    background: #fff1eb;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin: 12px 0;
+    text-align: left;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(100, 60, 50, 0.08);
+    transition: 0.3s;
+}
+
+#favoriteRecipes p:not(.no-favorites):hover {
+    transform: translateX(5px);
+}
+
+
+/* Clear Favorites Button */
+
+#clearFavorites {
+    margin-top: 20px;
+    padding: 11px 22px;
+    border: none;
+    border-radius: 25px;
+    background: #d96b5f;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#clearFavorites:hover {
+    background: #b94f45;
+    transform: translateY(-2px);
+}
+
+
+
+/* Food Lovers Community Page */
+
+.community-hero {
+    padding: 80px 8%;
+    text-align: center;
+    background: #fff1eb;
+}
+
+.community-hero h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    line-height: 1.15;
+    color: #4b302b;
+    margin-bottom: 20px;
+}
+
+.community-hero p:last-child {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #765d56;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.food-lovers {
+    padding: 70px 8%;
+    background: #fffaf7;
+}
+
+.food-lovers h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    color: #4b302b;
+    margin-bottom: 40px;
+}
+
+.lover-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.lover-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(100, 60, 50, 0.08);
+    transition: 0.3s;
+}
+
+.lover-card:hover {
+    transform: translateY(-7px);
+}
+
+.lover-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #f8d8cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+}
+
+.lover-card h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    color: #4b302b;
+    margin-bottom: 12px;
+}
+
+.lover-card p {
+    color: #c96b6b;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.lover-card span {
+    color: #88716a;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .lover-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .lover-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .community-hero h1 {
+        font-size: 36px;
+    }
+}
+
+.rating {
+    margin: 10px 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+
+.review {
+    margin-top: 15px;
+    padding: 12px 15px;
+    background: #fff1eb;
+    border-radius: 12px;
+    color: #765d56;
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+
+.like-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #f8d8cc;
+    color: #8f4f4f;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.like-btn:hover {
+    background: #e9b8aa;
+    transform: translateY(-2px);
+}

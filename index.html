@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RecipeNest</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🍓 RecipeNest</div>
+
+        <nav>
+    <a href="#">Home</a>
+    <a href="#">Recipes</a>
+    <a href="#">Categories</a>
+    <a href="#" id="favoritesLink">Favorites ❤️</a>
+    <a href="community.html">Food Lovers ❤️</a>
+</nav>    
+
+</header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-text">
+                <p class="small-title">WELCOME TO RECIPENEST ✨</p>
+
+                <h1>
+                    Your little nest<br>
+                    of delicious recipes.
+                </h1>
+
+                <p class="description">
+                    Discover simple, delicious recipes and find
+                    something wonderful to cook today.
+                </p>
+
+                <div class="search-box">
+                    <input type="text" placeholder="What are you craving today?">
+                    <button>🔍</button>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                🍝
+            </div>
+
+        </section>
+
+
+        <section class="categories">
+
+            <h2>Explore Categories</h2>
+
+            <div class="category-container">
+
+                <div class="category-card">
+                    🍳
+                    <h3>Breakfast</h3>
+                </div>
+
+                <div class="category-card">
+                    🍝
+                    <h3>Pasta</h3>
+                </div>
+
+                <div class="category-card">
+                    🍕
+                    <h3>Pizza</h3>
+                </div>
+
+                <div class="category-card">
+                    🍰
+                    <h3>Desserts</h3>
+                </div>
+
+                <div class="category-card">
+                    🥗
+                    <h3>Healthy</h3>
+                </div>
+
+                <div class="category-card">
+                    🥤
+                    <h3>Drinks</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="popular">
+
+            <h2>Popular Recipes 🍴</h2>
+
+            <div class="recipe-container">
+
+                <div class="recipe-card">
+                    <div class="food-image">🍝</div>
+
+                    <div class="recipe-info">
+                        <span>Italian</span>
+                        <h3>Creamy Pasta</h3>
+                        <p>⏱ 30 min &nbsp; ⭐ 4.8</p>
+                    </div>
+                </div>
+
+
+                <div class="recipe-card">
+                    <div class="food-image">🍕</div>
+
+                    <div class="recipe-info">
+                        <span>Italian</span>
+                        <h3>Cheesy Pizza</h3>
+                        <p>⏱ 25 min &nbsp; ⭐ 4.7</p>
+                    </div>
+                </div>
+
+
+                <div class="recipe-card">
+                    <div class="food-image">🍰</div>
+
+                    <div class="recipe-info">
+                        <span>Dessert</span>
+                        <h3>Strawberry Cake</h3>
+                        <p>⏱ 45 min &nbsp; ⭐ 4.9</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    <section class="recipes">
+    <h2>Popular Recipes 🍴</h2>
+
+    <div class="recipe-grid">
+
+        <div class="recipe-card">
+            <div class="recipe-image">🍝</div>
+            <h3>Creamy Pasta</h3>
+            <p>Rich, creamy and delicious pasta for a cozy meal.</p>
+            <button>View Recipe</button>
+             <button class="favorite-btn">❤️ Favorite</button>
+        
+
+         <div class="recipe-card">
+            <div class="recipe-image">🍕</div>
+            <h3>Cheesy Pizza</h3>
+            <p>Golden cheese, crispy base and your favourite toppings.</p>
+            <button>View Recipe</button>
+            <button class="favorite-btn">❤️ Favorite</button>
+        </div>
+
+        <div class="recipe-card">
+            <div class="recipe-image">🍰</div>
+            <h3>Strawberry Cake</h3>
+            <p>Soft, sweet and perfect for dessert lovers.</p>
+            <button>View Recipe</button>
+            <button class="favorite-btn">❤️ Favorite</button>       
+
+
+</div>
+
+        <div class="recipe-card">
+            <div class="recipe-image">🥗</div>
+            <h3>Fresh Salad</h3>
+            <p>A healthy and refreshing bowl packed with goodness.</p>
+            <button>View Recipe</button>
+            <button class="favorite-btn">❤️ Favorite</button>
+        
+
+    </div>
+</section>
+
+<section class="favorites-section" id="favoritesSection">
+
+    <h2>❤️ My Favorite Recipes</h2>
+
+    <div id="favoriteRecipes">
+        <p class="no-favorites">You haven't added any favorites yet.</p>
+    </div>
+
+   <button id="clearFavorites">🗑️ Clear Favorites</button>
+
+</section>
+
+    </main>
+
+
+    <footer>
+        <p>Made with ❤️ for food lovers · RecipeNest</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
