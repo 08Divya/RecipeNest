@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RecipeNest - Login</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff1eb;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            width: 380px;
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 35px rgba(100, 60, 50, 0.12);
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            color: #4b302b;
+            margin-bottom: 8px;
+        }
+
+        .welcome {
+            color: #88716a;
+            margin-bottom: 30px;
+        }
+
+        .input-box {
+            text-align: left;
+            margin-bottom: 18px;
+        }
+
+        .input-box label {
+            display: block;
+            margin-bottom: 7px;
+            color: #4b302b;
+            font-weight: bold;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #e5c8bd;
+            border-radius: 12px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .input-box input:focus {
+            border-color: #d96b5f;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 25px;
+            background: #d96b5f;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+
+        .login-btn:hover {
+            background: #b94f45;
+        }
+
+        .message {
+            margin-top: 18px;
+            color: #c96b6b;
+            font-size: 14px;
+            min-height: 20px;
+        }
+
+        .signup-text {
+            margin-top: 22px;
+            color: #88716a;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="logo">🍓</div>
+
+        <h1>RecipeNest</h1>
+
+        <p class="welcome">
+            Welcome back, food lover! ❤️
+        </p>
+
+        <form id="loginForm">
+
+            <div class="input-box">
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter your username"
+                    required>
+            </div>
+
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required>
+            </div>
+
+            <button type="submit" class="login-btn">
+                Login 🍴
+            </button>
+
+        </form>
+
+        <p id="message" class="message"></p>
+
+        <p class="signup-text">
+            Discover recipes. Save favorites. Share your food love. ❤️
+        </p>
+
+    </div>
+
+    <script>
+        const loginForm = document.getElementById("loginForm");
+        const message = document.getElementById("message");
+
+        loginForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const username =
+                document.getElementById("username").value.trim();
+
+            const password =
+                document.getElementById("password").value.trim();
+
+            if (username !== "" && password !== "") {
+
+                message.textContent =
+                    "Login successful! Opening RecipeNest... ❤️";
+
+                setTimeout(function() {
+                    window.location.href = "index.html";
+                }, 1000);
+
+            } else {
+
+                message.textContent =
+                    "Please enter your username and password.";
+
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>
