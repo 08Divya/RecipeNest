@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,196 +12,633 @@
 
 <body>
 
+    <!-- HEADER -->
+
     <header>
-        <div class="logo">🍓 RecipeNest</div>
 
-        <nav>
-    <a href="#">Home</a>
-    <a href="#">Recipes</a>
-    <a href="#">Categories</a>
-    <a href="#" id="favoritesLink">Favorites ❤️</a>
-    <a href="community.html">Food Lovers ❤️</a>
-</nav>    
-
-</header>
-
-
-    <main>
-
-        <section class="hero">
-
-            <div class="hero-text">
-                <p class="small-title">WELCOME TO RECIPENEST ✨</p>
-
-                <h1>
-                    Your little nest<br>
-                    of delicious recipes.
-                </h1>
-
-                <p class="description">
-                    Discover simple, delicious recipes and find
-                    something wonderful to cook today.
-                </p>
-
-                <div class="search-box">
-                    <input type="text" placeholder="What are you craving today?">
-                    <button>🔍</button>
-                </div>
-            </div>
-
-            <div class="hero-image">
-                🍝
-            </div>
-
-        </section>
-
-
-        <section class="categories">
-
-            <h2>Explore Categories</h2>
-
-            <div class="category-container">
-
-                <div class="category-card">
-                    🍳
-                    <h3>Breakfast</h3>
-                </div>
-
-                <div class="category-card">
-                    🍝
-                    <h3>Pasta</h3>
-                </div>
-
-                <div class="category-card">
-                    🍕
-                    <h3>Pizza</h3>
-                </div>
-
-                <div class="category-card">
-                    🍰
-                    <h3>Desserts</h3>
-                </div>
-
-                <div class="category-card">
-                    🥗
-                    <h3>Healthy</h3>
-                </div>
-
-                <div class="category-card">
-                    🥤
-                    <h3>Drinks</h3>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section class="popular">
-
-            <h2>Popular Recipes 🍴</h2>
-
-            <div class="recipe-container">
-
-                <div class="recipe-card">
-                    <div class="food-image">🍝</div>
-
-                    <div class="recipe-info">
-                        <span>Italian</span>
-                        <h3>Creamy Pasta</h3>
-                        <p>⏱ 30 min &nbsp; ⭐ 4.8</p>
-                    </div>
-                </div>
-
-
-                <div class="recipe-card">
-                    <div class="food-image">🍕</div>
-
-                    <div class="recipe-info">
-                        <span>Italian</span>
-                        <h3>Cheesy Pizza</h3>
-                        <p>⏱ 25 min &nbsp; ⭐ 4.7</p>
-                    </div>
-                </div>
-
-
-                <div class="recipe-card">
-                    <div class="food-image">🍰</div>
-
-                    <div class="recipe-info">
-                        <span>Dessert</span>
-                        <h3>Strawberry Cake</h3>
-                        <p>⏱ 45 min &nbsp; ⭐ 4.9</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-    <section class="recipes">
-    <h2>Popular Recipes 🍴</h2>
-
-    <div class="recipe-grid">
-
-        <div class="recipe-card">
-            <div class="recipe-image">🍝</div>
-            <h3>Creamy Pasta</h3>
-            <p>Rich, creamy and delicious pasta for a cozy meal.</p>
-            <button>View Recipe</button>
-             <button class="favorite-btn">❤️ Favorite</button>
-        
-
-         <div class="recipe-card">
-            <div class="recipe-image">🍕</div>
-            <h3>Cheesy Pizza</h3>
-            <p>Golden cheese, crispy base and your favourite toppings.</p>
-            <button>View Recipe</button>
-            <button class="favorite-btn">❤️ Favorite</button>
+        <div class="logo">
+            🍓 RecipeNest
         </div>
 
-        <div class="recipe-card">
-            <div class="recipe-image">🍰</div>
-            <h3>Strawberry Cake</h3>
-            <p>Soft, sweet and perfect for dessert lovers.</p>
-            <button>View Recipe</button>
-            <button class="favorite-btn">❤️ Favorite</button>       
+        <nav>
+
+            <a href="#">Home</a>
+
+            <a href="#recipes">Recipes</a>
+
+            <a href="#categories">Categories</a>
+
+            <a href="#" id="favoritesLink">
+                Favorites ❤️
+            </a>
+
+            <a href="community.html">
+                Food Lovers ❤️
+            </a>
+
+        </nav>
+
+    </header>
 
 
-</div>
+    <!-- HERO SECTION -->
 
-        <div class="recipe-card">
-            <div class="recipe-image">🥗</div>
-            <h3>Fresh Salad</h3>
-            <p>A healthy and refreshing bowl packed with goodness.</p>
-            <button>View Recipe</button>
-            <button class="favorite-btn">❤️ Favorite</button>
-        
+    <section class="hero">
 
-    </div>
-</section>
+        <div class="hero-content">
 
-<section class="favorites-section" id="favoritesSection">
+            <h1>
+                Your little nest of delicious recipes.
+            </h1>
 
-    <h2>❤️ My Favorite Recipes</h2>
+            <p>
+                Discover delicious recipes, save your favorites,
+                and find something tasty to cook today. ❤️
+            </p>
 
-    <div id="favoriteRecipes">
-        <p class="no-favorites">You haven't added any favorites yet.</p>
-    </div>
 
-   <button id="clearFavorites">🗑️ Clear Favorites</button>
+            <!-- SEARCH -->
 
-</section>
+            <div class="search-box">
 
-    </main>
+                <input
+                    type="text"
+                    placeholder="Search for a recipe..."
+                >
 
+                <button>
+                    Search 🔎
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="categories" id="categories">
+
+        <h2>
+            Explore Categories
+        </h2>
+
+
+        <div class="category-grid">
+
+
+            <!-- BREAKFAST -->
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🍳
+                </div>
+
+                <h3>
+                    Breakfast
+                </h3>
+
+                <p>
+                    Start your day with something delicious.
+                </p>
+
+            </div>
+
+
+            <!-- PASTA -->
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🍝
+                </div>
+
+                <h3>
+                    Pasta
+                </h3>
+
+                <p>
+                    Creamy and delicious pasta recipes.
+                </p>
+
+            </div>
+
+
+            <!-- PIZZA -->
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🍕
+                </div>
+
+                <h3>
+                    Pizza
+                </h3>
+
+                <p>
+                    Cheesy pizzas for every mood.
+                </p>
+
+            </div>
+
+
+            <!-- DESSERTS -->
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🍰
+                </div>
+
+                <h3>
+                    Desserts
+                </h3>
+
+                <p>
+                    Sweet treats and delicious cakes.
+                </p>
+
+            </div>
+
+
+            <!-- HEALTHY -->
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🥗
+                </div>
+
+                <h3>
+                    Healthy
+                </h3>
+
+                <p>
+                    Fresh and healthy food ideas.
+                </p>
+
+            </div>
+
+
+            <!-- DRINKS -->
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🥤
+                </div>
+
+                <h3>
+                    Drinks
+                </h3>
+
+                <p>
+                    Refreshing drinks for every occasion.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RECIPES -->
+
+    <section class="recipes" id="recipes">
+
+        <h2>
+            Popular Recipes
+        </h2>
+
+
+        <div class="recipe-grid">
+
+
+            <!-- CREAMY PASTA -->
+
+            <div class="recipe-card">
+
+                <div class="recipe-image">
+                    🍝
+                </div>
+
+                <h3>
+                    Creamy Pasta
+                </h3>
+
+                <p>
+                    Creamy pasta with cheese, garlic and herbs.
+                </p>
+
+                <button>
+                    View Recipe
+                </button>
+
+                <button class="favorite-btn">
+                    ❤️ Favorite
+                </button>
+
+                <button class="like-btn">
+                    ❤️ Like
+                </button>
+
+            </div>
+
+
+            <!-- CHEESY PIZZA -->
+
+            <div class="recipe-card">
+
+                <div class="recipe-image">
+                    🍕
+                </div>
+
+                <h3>
+                    Cheesy Pizza
+                </h3>
+
+                <p>
+                    Delicious cheesy pizza with fresh vegetables.
+                </p>
+
+                <button>
+                    View Recipe
+                </button>
+
+                <button class="favorite-btn">
+                    ❤️ Favorite
+                </button>
+
+                <button class="like-btn">
+                    ❤️ Like
+                </button>
+
+            </div>
+
+
+            <!-- STRAWBERRY CAKE -->
+
+            <div class="recipe-card">
+
+                <div class="recipe-image">
+                    🍰
+                </div>
+
+                <h3>
+                    Strawberry Cake
+                </h3>
+
+                <p>
+                    Soft strawberry cake with a creamy topping.
+                </p>
+
+                <button>
+                    View Recipe
+                </button>
+
+                <button class="favorite-btn">
+                    ❤️ Favorite
+                </button>
+
+                <button class="like-btn">
+                    ❤️ Like
+                </button>
+
+            </div>
+
+
+            <!-- FRESH SALAD -->
+
+            <div class="recipe-card">
+
+                <div class="recipe-image">
+                    🥗
+                </div>
+
+                <h3>
+                    Fresh Salad
+                </h3>
+
+                <p>
+                    Fresh and healthy salad with colourful vegetables.
+                </p>
+
+                <button>
+                    View Recipe
+                </button>
+
+                <button class="favorite-btn">
+                    ❤️ Favorite
+                </button>
+
+                <button class="like-btn">
+                    ❤️ Like
+                </button>
+
+            </div>
+
+
+            <!-- CHICKEN BIRYANI -->
+
+            <div class="recipe-card">
+
+                <div class="recipe-image">
+                    🍛
+                </div>
+
+                <h3>
+                    Chicken Biryani
+                </h3>
+
+                <p>
+                    Aromatic chicken biryani with delicious spices.
+                </p>
+
+                <button>
+                    View Recipe
+                </button>
+
+                <button class="favorite-btn">
+                    ❤️ Favorite
+                </button>
+
+                <button class="like-btn">
+                    ❤️ Like
+                </button>
+
+            </div>
+
+
+            <!-- VEG NOODLES -->
+
+            <div class="recipe-card">
+
+                <div class="recipe-image">
+                    🍜
+                </div>
+
+                <h3>
+                    Veg Noodles
+                </h3>
+
+                <p>
+                    Tasty noodles tossed with fresh vegetables.
+                </p>
+
+                <button>
+                    View Recipe
+                </button>
+
+                <button class="favorite-btn">
+                    ❤️ Favorite
+                </button>
+
+                <button class="like-btn">
+                    ❤️ Like
+                </button>
+
+            </div>
+
+
+            <!-- CHEESY BURGER -->
+
+            <div class="recipe-card">
+
+                <div class="recipe-image">
+                    🍔
+                </div>
+
+                <h3>
+                    Cheesy Burger
+                </h3>
+
+                <p>
+                    Juicy burger with melted cheese and fresh vegetables.
+                </p>
+
+                <button>
+                    View Recipe
+                </button>
+
+                <button class="favorite-btn">
+                    ❤️ Favorite
+                </button>
+
+                <button class="like-btn">
+                    ❤️ Like
+                </button>
+
+            </div>
+
+
+            <!-- CHICKEN PIZZA -->
+
+            <div class="recipe-card">
+
+                <div class="recipe-image">
+                    🍕
+                </div>
+
+                <h3>
+                    Chicken Pizza
+                </h3>
+
+                <p>
+                    Delicious pizza topped with chicken and cheese.
+                </p>
+
+                <button>
+                    View Recipe
+                </button>
+
+                <button class="favorite-btn">
+                    ❤️ Favorite
+                </button>
+
+                <button class="like-btn">
+                    ❤️ Like
+                </button>
+
+            </div>
+
+
+            <!-- FLUFFY PANCAKES -->
+
+            <div class="recipe-card">
+
+                <div class="recipe-image">
+                    🥞
+                </div>
+
+                <h3>
+                    Fluffy Pancakes
+                </h3>
+
+                <p>
+                    Soft and fluffy pancakes served with syrup and fruits.
+                </p>
+
+                <button>
+                    View Recipe
+                </button>
+
+                <button class="favorite-btn">
+                    ❤️ Favorite
+                </button>
+
+                <button class="like-btn">
+                    ❤️ Like
+                </button>
+
+            </div>
+
+
+            <!-- CHICKEN NOODLES -->
+
+            <div class="recipe-card">
+
+                <div class="recipe-image">
+                    🍜
+                </div>
+
+                <h3>
+                    Chicken Noodles
+                </h3>
+
+                <p>
+                    Hot noodles tossed with chicken and vegetables.
+                </p>
+
+                <button>
+                    View Recipe
+                </button>
+
+                <button class="favorite-btn">
+                    ❤️ Favorite
+                </button>
+
+                <button class="like-btn">
+                    ❤️ Like
+                </button>
+
+            </div>
+
+
+            <!-- CHOCOLATE CAKE -->
+
+            <div class="recipe-card">
+
+                <div class="recipe-image">
+                    🍫
+                </div>
+
+                <h3>
+                    Chocolate Cake
+                </h3>
+
+                <p>
+                    Rich and moist chocolate cake with creamy topping.
+                </p>
+
+                <button>
+                    View Recipe
+                </button>
+
+                <button class="favorite-btn">
+                    ❤️ Favorite
+                </button>
+
+                <button class="like-btn">
+                    ❤️ Like
+                </button>
+
+            </div>
+
+
+            <!-- FRESH LEMONADE -->
+
+            <div class="recipe-card">
+
+                <div class="recipe-image">
+                    🥤
+                </div>
+
+                <h3>
+                    Fresh Lemonade
+                </h3>
+
+                <p>
+                    Refreshing lemonade made with fresh lemon and ice.
+                </p>
+
+                <button>
+                    View Recipe
+                </button>
+
+                <button class="favorite-btn">
+                    ❤️ Favorite
+                </button>
+
+                <button class="like-btn">
+                    ❤️ Like
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- FAVORITES -->
+
+    <section
+        class="favorites-section"
+        id="favoritesSection"
+    >
+
+        <h2>
+            ❤️ My Favorite Recipes
+        </h2>
+
+
+        <div id="favoriteRecipes">
+
+            <p class="no-favorites">
+                You haven't added any favorites yet.
+            </p>
+
+        </div>
+
+
+        <button id="clearFavorites">
+            🗑️ Clear Favorites
+        </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
 
     <footer>
-        <p>Made with ❤️ for food lovers · RecipeNest</p>
+
+        <p>
+            Made with ❤️ by RecipeNest
+        </p>
+
     </footer>
 
+
+    <!-- JAVASCRIPT -->
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
