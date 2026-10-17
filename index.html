@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,639 +6,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>RecipeNest</title>
+    <title>RecipeNest - Login</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff1eb;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            width: 380px;
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 35px rgba(100, 60, 50, 0.12);
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            color: #4b302b;
+            margin-bottom: 8px;
+        }
+
+        .welcome {
+            color: #88716a;
+            margin-bottom: 30px;
+        }
+
+        .input-box {
+            text-align: left;
+            margin-bottom: 18px;
+        }
+
+        .input-box label {
+            display: block;
+            margin-bottom: 7px;
+            color: #4b302b;
+            font-weight: bold;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #e5c8bd;
+            border-radius: 12px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .input-box input:focus {
+            border-color: #d96b5f;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 25px;
+            background: #d96b5f;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+
+        .login-btn:hover {
+            background: #b94f45;
+        }
+
+        .message {
+            margin-top: 18px;
+            color: #c96b6b;
+            font-size: 14px;
+            min-height: 20px;
+        }
+
+        .signup-text {
+            margin-top: 22px;
+            color: #88716a;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <div class="login-container">
 
-    <header>
+        <div class="logo">🍓</div>
 
-        <div class="logo">
-            🍓 RecipeNest
-        </div>
+        <h1>RecipeNest</h1>
 
-        <nav>
+        <p class="welcome">
+            Welcome back, food lover! ❤️
+        </p>
 
-            <a href="#">Home</a>
+        <form id="loginForm">
 
-            <a href="#recipes">Recipes</a>
+            <div class="input-box">
 
-            <a href="#categories">Categories</a>
-
-            <a href="#" id="favoritesLink">
-                Favorites ❤️
-            </a>
-
-            <a href="community.html">
-                Food Lovers ❤️
-            </a>
-
-        </nav>
-
-    </header>
-
-
-    <!-- HERO SECTION -->
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <h1>
-                Your little nest of delicious recipes.
-            </h1>
-
-            <p>
-                Discover delicious recipes, save your favorites,
-                and find something tasty to cook today. ❤️
-            </p>
-
-
-            <!-- SEARCH -->
-
-            <div class="search-box">
+                <label for="username">
+                    Username
+                </label>
 
                 <input
                     type="text"
-                    placeholder="Search for a recipe..."
-                >
-
-                <button>
-                    Search 🔎
-                </button>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CATEGORIES -->
-
-    <section class="categories" id="categories">
-
-        <h2>
-            Explore Categories
-        </h2>
-
-
-        <div class="category-grid">
-
-
-            <!-- BREAKFAST -->
-
-            <div class="category-card">
-
-                <div class="category-icon">
-                    🍳
-                </div>
-
-                <h3>
-                    Breakfast
-                </h3>
-
-                <p>
-                    Start your day with something delicious.
-                </p>
+                    id="username"
+                    placeholder="Enter your username"
+                    required>
 
             </div>
 
 
-            <!-- PASTA -->
+            <div class="input-box">
 
-            <div class="category-card">
+                <label for="password">
+                    Password
+                </label>
 
-                <div class="category-icon">
-                    🍝
-                </div>
-
-                <h3>
-                    Pasta
-                </h3>
-
-                <p>
-                    Creamy and delicious pasta recipes.
-                </p>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required>
 
             </div>
 
 
-            <!-- PIZZA -->
+            <button
+                type="submit"
+                class="login-btn">
 
-            <div class="category-card">
+                Login 🍴
 
-                <div class="category-icon">
-                    🍕
-                </div>
+            </button>
 
-                <h3>
-                    Pizza
-                </h3>
+        </form>
 
-                <p>
-                    Cheesy pizzas for every mood.
-                </p>
 
-            </div>
+        <p id="message" class="message"></p>
 
 
-            <!-- DESSERTS -->
-
-            <div class="category-card">
-
-                <div class="category-icon">
-                    🍰
-                </div>
-
-                <h3>
-                    Desserts
-                </h3>
-
-                <p>
-                    Sweet treats and delicious cakes.
-                </p>
-
-            </div>
-
-
-            <!-- HEALTHY -->
-
-            <div class="category-card">
-
-                <div class="category-icon">
-                    🥗
-                </div>
-
-                <h3>
-                    Healthy
-                </h3>
-
-                <p>
-                    Fresh and healthy food ideas.
-                </p>
-
-            </div>
-
-
-            <!-- DRINKS -->
-
-            <div class="category-card">
-
-                <div class="category-icon">
-                    🥤
-                </div>
-
-                <h3>
-                    Drinks
-                </h3>
-
-                <p>
-                    Refreshing drinks for every occasion.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- RECIPES -->
-
-    <section class="recipes" id="recipes">
-
-        <h2>
-            Popular Recipes
-        </h2>
-
-
-        <div class="recipe-grid">
-
-
-            <!-- CREAMY PASTA -->
-
-            <div class="recipe-card">
-
-                <div class="recipe-image">
-                    🍝
-                </div>
-
-                <h3>
-                    Creamy Pasta
-                </h3>
-
-                <p>
-                    Creamy pasta with cheese, garlic and herbs.
-                </p>
-
-                <button>
-                    View Recipe
-                </button>
-
-                <button class="favorite-btn">
-                    ❤️ Favorite
-                </button>
-
-                <button class="like-btn">
-                    ❤️ Like
-                </button>
-
-            </div>
-
-
-            <!-- CHEESY PIZZA -->
-
-            <div class="recipe-card">
-
-                <div class="recipe-image">
-                    🍕
-                </div>
-
-                <h3>
-                    Cheesy Pizza
-                </h3>
-
-                <p>
-                    Delicious cheesy pizza with fresh vegetables.
-                </p>
-
-                <button>
-                    View Recipe
-                </button>
-
-                <button class="favorite-btn">
-                    ❤️ Favorite
-                </button>
-
-                <button class="like-btn">
-                    ❤️ Like
-                </button>
-
-            </div>
-
-
-            <!-- STRAWBERRY CAKE -->
-
-            <div class="recipe-card">
-
-                <div class="recipe-image">
-                    🍰
-                </div>
-
-                <h3>
-                    Strawberry Cake
-                </h3>
-
-                <p>
-                    Soft strawberry cake with a creamy topping.
-                </p>
-
-                <button>
-                    View Recipe
-                </button>
-
-                <button class="favorite-btn">
-                    ❤️ Favorite
-                </button>
-
-                <button class="like-btn">
-                    ❤️ Like
-                </button>
-
-            </div>
-
-
-            <!-- FRESH SALAD -->
-
-            <div class="recipe-card">
-
-                <div class="recipe-image">
-                    🥗
-                </div>
-
-                <h3>
-                    Fresh Salad
-                </h3>
-
-                <p>
-                    Fresh and healthy salad with colourful vegetables.
-                </p>
-
-                <button>
-                    View Recipe
-                </button>
-
-                <button class="favorite-btn">
-                    ❤️ Favorite
-                </button>
-
-                <button class="like-btn">
-                    ❤️ Like
-                </button>
-
-            </div>
-
-
-            <!-- CHICKEN BIRYANI -->
-
-            <div class="recipe-card">
-
-                <div class="recipe-image">
-                    🍛
-                </div>
-
-                <h3>
-                    Chicken Biryani
-                </h3>
-
-                <p>
-                    Aromatic chicken biryani with delicious spices.
-                </p>
-
-                <button>
-                    View Recipe
-                </button>
-
-                <button class="favorite-btn">
-                    ❤️ Favorite
-                </button>
-
-                <button class="like-btn">
-                    ❤️ Like
-                </button>
-
-            </div>
-
-
-            <!-- VEG NOODLES -->
-
-            <div class="recipe-card">
-
-                <div class="recipe-image">
-                    🍜
-                </div>
-
-                <h3>
-                    Veg Noodles
-                </h3>
-
-                <p>
-                    Tasty noodles tossed with fresh vegetables.
-                </p>
-
-                <button>
-                    View Recipe
-                </button>
-
-                <button class="favorite-btn">
-                    ❤️ Favorite
-                </button>
-
-                <button class="like-btn">
-                    ❤️ Like
-                </button>
-
-            </div>
-
-
-            <!-- CHEESY BURGER -->
-
-            <div class="recipe-card">
-
-                <div class="recipe-image">
-                    🍔
-                </div>
-
-                <h3>
-                    Cheesy Burger
-                </h3>
-
-                <p>
-                    Juicy burger with melted cheese and fresh vegetables.
-                </p>
-
-                <button>
-                    View Recipe
-                </button>
-
-                <button class="favorite-btn">
-                    ❤️ Favorite
-                </button>
-
-                <button class="like-btn">
-                    ❤️ Like
-                </button>
-
-            </div>
-
-
-            <!-- CHICKEN PIZZA -->
-
-            <div class="recipe-card">
-
-                <div class="recipe-image">
-                    🍕
-                </div>
-
-                <h3>
-                    Chicken Pizza
-                </h3>
-
-                <p>
-                    Delicious pizza topped with chicken and cheese.
-                </p>
-
-                <button>
-                    View Recipe
-                </button>
-
-                <button class="favorite-btn">
-                    ❤️ Favorite
-                </button>
-
-                <button class="like-btn">
-                    ❤️ Like
-                </button>
-
-            </div>
-
-
-            <!-- FLUFFY PANCAKES -->
-
-            <div class="recipe-card">
-
-                <div class="recipe-image">
-                    🥞
-                </div>
-
-                <h3>
-                    Fluffy Pancakes
-                </h3>
-
-                <p>
-                    Soft and fluffy pancakes served with syrup and fruits.
-                </p>
-
-                <button>
-                    View Recipe
-                </button>
-
-                <button class="favorite-btn">
-                    ❤️ Favorite
-                </button>
-
-                <button class="like-btn">
-                    ❤️ Like
-                </button>
-
-            </div>
-
-
-            <!-- CHICKEN NOODLES -->
-
-            <div class="recipe-card">
-
-                <div class="recipe-image">
-                    🍜
-                </div>
-
-                <h3>
-                    Chicken Noodles
-                </h3>
-
-                <p>
-                    Hot noodles tossed with chicken and vegetables.
-                </p>
-
-                <button>
-                    View Recipe
-                </button>
-
-                <button class="favorite-btn">
-                    ❤️ Favorite
-                </button>
-
-                <button class="like-btn">
-                    ❤️ Like
-                </button>
-
-            </div>
-
-
-            <!-- CHOCOLATE CAKE -->
-
-            <div class="recipe-card">
-
-                <div class="recipe-image">
-                    🍫
-                </div>
-
-                <h3>
-                    Chocolate Cake
-                </h3>
-
-                <p>
-                    Rich and moist chocolate cake with creamy topping.
-                </p>
-
-                <button>
-                    View Recipe
-                </button>
-
-                <button class="favorite-btn">
-                    ❤️ Favorite
-                </button>
-
-                <button class="like-btn">
-                    ❤️ Like
-                </button>
-
-            </div>
-
-
-            <!-- FRESH LEMONADE -->
-
-            <div class="recipe-card">
-
-                <div class="recipe-image">
-                    🥤
-                </div>
-
-                <h3>
-                    Fresh Lemonade
-                </h3>
-
-                <p>
-                    Refreshing lemonade made with fresh lemon and ice.
-                </p>
-
-                <button>
-                    View Recipe
-                </button>
-
-                <button class="favorite-btn">
-                    ❤️ Favorite
-                </button>
-
-                <button class="like-btn">
-                    ❤️ Like
-                </button>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- FAVORITES -->
-
-    <section
-        class="favorites-section"
-        id="favoritesSection"
-    >
-
-        <h2>
-            ❤️ My Favorite Recipes
-        </h2>
-
-
-        <div id="favoriteRecipes">
-
-            <p class="no-favorites">
-                You haven't added any favorites yet.
-            </p>
-
-        </div>
-
-
-        <button id="clearFavorites">
-            🗑️ Clear Favorites
-        </button>
-
-    </section>
-
-
-    <!-- FOOTER -->
-
-    <footer>
-
-        <p>
-            Made with ❤️ by RecipeNest
+        <p class="signup-text">
+            Discover recipes. Save favorites.
+            Share your food love. ❤️
         </p>
 
-    </footer>
+    </div>
 
 
-    <!-- JAVASCRIPT -->
+    <script>
 
-    <script src="script.js"></script>
+        const loginForm =
+            document.getElementById("loginForm");
+
+        const message =
+            document.getElementById("message");
+
+
+        loginForm.addEventListener(
+            "submit",
+            function(event) {
+
+                event.preventDefault();
+
+
+                const username =
+                    document
+                    .getElementById("username")
+                    .value
+                    .trim();
+
+
+                const password =
+                    document
+                    .getElementById("password")
+                    .value
+                    .trim();
+
+
+                if (
+                    username !== "" &&
+                    password !== ""
+                ) {
+
+                    message.textContent =
+                        "Login successful! Opening RecipeNest... ❤️";
+
+
+                    setTimeout(
+                        function() {
+
+                            window.location.href =
+                                "home.html";
+
+                        },
+                        1000
+                    );
+
+
+                } else {
+
+                    message.textContent =
+                        "Please enter your username and password.";
+
+                }
+
+            }
+        );
+
+    </script>
 
 </body>
 
